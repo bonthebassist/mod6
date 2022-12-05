@@ -1,22 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import Fetcher from './components/FetchComponent';
+import { GreetingButtonComponent } from './components/GreetingButtonComponent';
+import GreetingComponent from './components/GreetingComponent';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <GreetingComponent name="Bonnie"></GreetingComponent>
+        <GreetingButtonComponent name="Bonnie"></GreetingButtonComponent>
+        <Fetcher></Fetcher>
       </header>
     </div>
   );
